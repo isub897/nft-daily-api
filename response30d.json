@@ -1,0 +1,695 @@
+[
+    {
+        "collection_name": "Loy City (30d)",
+        "collection_url": "https://www.nft-stats.com/collection/loy-city",
+        "trades": "57",
+        "volume": "$108.76M",
+        "floor": "Ξ0"
+    },
+    {
+        "collection_name": "goblintown.wtf",
+        "collection_url": "https://www.nft-stats.com/collection/goblintownwtf",
+        "trades": "22,068",
+        "volume": "$67.19M",
+        "floor": "Ξ3.22"
+    },
+    {
+        "collection_name": "Bored Ape Yacht Club",
+        "collection_url": "https://www.nft-stats.com/collection/boredapeyachtclub",
+        "trades": "353",
+        "volume": "$60.59M",
+        "floor": "Ξ83.5"
+    },
+    {
+        "collection_name": "Otherdeed for Otherside",
+        "collection_url": "https://www.nft-stats.com/collection/otherdeed",
+        "trades": "5,163",
+        "volume": "$60.39M",
+        "floor": "Ξ2"
+    },
+    {
+        "collection_name": "REVV Racing",
+        "collection_url": "https://www.nft-stats.com/collection/revv-motorsport-inventory",
+        "trades": "975",
+        "volume": "$38.76M",
+        "floor": "Ξ0"
+    },
+    {
+        "collection_name": "Mutant Ape Yacht Club",
+        "collection_url": "https://www.nft-stats.com/collection/mutant-ape-yacht-club",
+        "trades": "971",
+        "volume": "$30.35M",
+        "floor": "Ξ15.98"
+    },
+    {
+        "collection_name": "We Are All Going to Die",
+        "collection_url": "https://www.nft-stats.com/collection/we-are-all-going-to-die",
+        "trades": "15,650",
+        "volume": "$20.27M",
+        "floor": "Ξ0.24"
+    },
+    {
+        "collection_name": "CLONE X - X TAKASHI MURAKAMI",
+        "collection_url": "https://www.nft-stats.com/collection/clonex",
+        "trades": "887",
+        "volume": "$18.46M",
+        "floor": "Ξ8.3"
+    },
+    {
+        "collection_name": "CryptoPunks",
+        "collection_url": "https://www.nft-stats.com/collection/cryptopunks",
+        "trades": "263",
+        "volume": "$18.08M",
+        "floor": ""
+    },
+    {
+        "collection_name": "Boki",
+        "collection_url": "https://www.nft-stats.com/collection/bokinftofficial",
+        "trades": "21,020",
+        "volume": "$18.07M",
+        "floor": "Ξ0.58"
+    },
+    {
+        "collection_name": "Chimpers",
+        "collection_url": "https://www.nft-stats.com/collection/chimpersnft",
+        "trades": "2,571",
+        "volume": "$16.67M",
+        "floor": "Ξ1.19"
+    },
+    {
+        "collection_name": "Moonbirds",
+        "collection_url": "https://www.nft-stats.com/collection/proof-moonbirds",
+        "trades": "451",
+        "volume": "$16.16M",
+        "floor": "Ξ14.6"
+    },
+    {
+        "collection_name": "Azuki",
+        "collection_url": "https://www.nft-stats.com/collection/azuki",
+        "trades": "704",
+        "volume": "$15.08M",
+        "floor": "Ξ9.49"
+    },
+    {
+        "collection_name": "The Camels Club",
+        "collection_url": "https://www.nft-stats.com/collection/the-camels-club",
+        "trades": "18",
+        "volume": "$15.05M",
+        "floor": "Ξ0.3"
+    },
+    {
+        "collection_name": "ShitBeast",
+        "collection_url": "https://www.nft-stats.com/collection/shitbeast",
+        "trades": "11,616",
+        "volume": "$10.91M",
+        "floor": "Ξ0.64"
+    },
+    {
+        "collection_name": "rektguy",
+        "collection_url": "https://www.nft-stats.com/collection/rektguy",
+        "trades": "8,791",
+        "volume": "$10.39M",
+        "floor": "Ξ0.32"
+    },
+    {
+        "collection_name": "Moonbirds Oddities",
+        "collection_url": "https://www.nft-stats.com/collection/moonbirds-oddities",
+        "trades": "1,715",
+        "volume": "$10.02M",
+        "floor": "Ξ1.95"
+    },
+    {
+        "collection_name": "Exclusive ticket for Valentina & Prince's Wedding",
+        "collection_url": "https://www.nft-stats.com/collection/wedding-fb",
+        "trades": "108",
+        "volume": "$9.78M",
+        "floor": "Ξ0.03"
+    },
+    {
+        "collection_name": "Akumu Dragonz",
+        "collection_url": "https://www.nft-stats.com/collection/akumu-dragonz",
+        "trades": "8,275",
+        "volume": "$9.14M",
+        "floor": "Ξ0.21"
+    },
+    {
+        "collection_name": "DEGEN TOONZ COLLECTION",
+        "collection_url": "https://www.nft-stats.com/collection/degentoonz-collection",
+        "trades": "2,144",
+        "volume": "$8.87M",
+        "floor": "Ξ1.1"
+    },
+    {
+        "collection_name": "Blockchain Bully Builds",
+        "collection_url": "https://www.nft-stats.com/collection/block-bully-builds",
+        "trades": "25",
+        "volume": "$8.09M",
+        "floor": "Ξ0.02"
+    },
+    {
+        "collection_name": "ill poop it nft",
+        "collection_url": "https://www.nft-stats.com/collection/pieceofshit-wtf",
+        "trades": "20,302",
+        "volume": "$7.76M",
+        "floor": "Ξ1.1"
+    },
+    {
+        "collection_name": "Murakami.Flowers Official",
+        "collection_url": "https://www.nft-stats.com/collection/murakami-flowers-2022-official",
+        "trades": "1,081",
+        "volume": "$7.44M",
+        "floor": "Ξ2.4"
+    },
+    {
+        "collection_name": "AINightbirds",
+        "collection_url": "https://www.nft-stats.com/collection/ainightbirds",
+        "trades": "13,097",
+        "volume": "$7.17M",
+        "floor": "Ξ0.1"
+    },
+    {
+        "collection_name": "Doodles",
+        "collection_url": "https://www.nft-stats.com/collection/doodles-official",
+        "trades": "363",
+        "volume": "$7.01M",
+        "floor": "Ξ9.95"
+    },
+    {
+        "collection_name": "PXN: Ghost Division",
+        "collection_url": "https://www.nft-stats.com/collection/pxnghostdivision",
+        "trades": "2,705",
+        "volume": "$6.68M",
+        "floor": "Ξ0.49"
+    },
+    {
+        "collection_name": "GENE_SIS: The Girls of Armament",
+        "collection_url": "https://www.nft-stats.com/collection/gene-sis-the-girls-of-armament",
+        "trades": "6,463",
+        "volume": "$6.6M",
+        "floor": "Ξ0.11"
+    },
+    {
+        "collection_name": "Admit One",
+        "collection_url": "https://www.nft-stats.com/collection/admit-one",
+        "trades": "323",
+        "volume": "$6.08M",
+        "floor": "Ξ9.25"
+    },
+    {
+        "collection_name": "Karafuru Gachapon",
+        "collection_url": "https://www.nft-stats.com/collection/karafuru-gachapon",
+        "trades": "6,955",
+        "volume": "$5.79M",
+        "floor": "Ξ0.13"
+    },
+    {
+        "collection_name": "NotOkayBears",
+        "collection_url": "https://www.nft-stats.com/collection/not-okay-bears",
+        "trades": "9,584",
+        "volume": "$5.76M",
+        "floor": "Ξ0.19"
+    },
+    {
+        "collection_name": "Bored Ape Chemistry Club",
+        "collection_url": "https://www.nft-stats.com/collection/bored-ape-chemistry-club",
+        "trades": "67",
+        "volume": "$5.64M",
+        "floor": "Ξ34"
+    },
+    {
+        "collection_name": "mcgoblin.wtf",
+        "collection_url": "https://www.nft-stats.com/collection/mcgoblinwtf",
+        "trades": "2,683",
+        "volume": "$5.52M",
+        "floor": "Ξ0.73"
+    },
+    {
+        "collection_name": "ENS: Ethereum Name Service",
+        "collection_url": "https://www.nft-stats.com/collection/ens",
+        "trades": "9,882",
+        "volume": "$5.36M",
+        "floor": "Ξ0"
+    },
+    {
+        "collection_name": "New Money Matrix Family Discord NFTs",
+        "collection_url": "https://www.nft-stats.com/collection/new-money-matrix-family-discord-nfts",
+        "trades": "36",
+        "volume": "$5.19M",
+        "floor": ""
+    },
+    {
+        "collection_name": "Milady Maker",
+        "collection_url": "https://www.nft-stats.com/collection/milady",
+        "trades": "3,101",
+        "volume": "$5.16M",
+        "floor": "Ξ0.27"
+    },
+    {
+        "collection_name": "BEANZ Official",
+        "collection_url": "https://www.nft-stats.com/collection/beanzofficial",
+        "trades": "1,823",
+        "volume": "$5.14M",
+        "floor": "Ξ0.96"
+    },
+    {
+        "collection_name": "Elftown.wtf",
+        "collection_url": "https://www.nft-stats.com/collection/elftown-wtf",
+        "trades": "22,983",
+        "volume": "$5.1M",
+        "floor": "Ξ0.01"
+    },
+    {
+        "collection_name": "MemoSalinas777",
+        "collection_url": "https://www.nft-stats.com/collection/memosalinas777",
+        "trades": "367",
+        "volume": "$4.93M",
+        "floor": "Ξ0.03"
+    },
+    {
+        "collection_name": "mfers",
+        "collection_url": "https://www.nft-stats.com/collection/mfers",
+        "trades": "1,499",
+        "volume": "$4.79M",
+        "floor": "Ξ1.5"
+    },
+    {
+        "collection_name": "Goblin Grlz",
+        "collection_url": "https://www.nft-stats.com/collection/goblin-grlz",
+        "trades": "15,427",
+        "volume": "$4.78M",
+        "floor": "Ξ0.02"
+    },
+    {
+        "collection_name": "The GODA Mint Pass",
+        "collection_url": "https://www.nft-stats.com/collection/goda-mint-pass",
+        "trades": "498",
+        "volume": "$4.76M",
+        "floor": "Ξ5.69"
+    },
+    {
+        "collection_name": "Bored Ape Kennel Club",
+        "collection_url": "https://www.nft-stats.com/collection/bored-ape-kennel-club",
+        "trades": "398",
+        "volume": "$4.61M",
+        "floor": "Ξ5.54"
+    },
+    {
+        "collection_name": "Tigerbob NFT Genesis Collection",
+        "collection_url": "https://www.nft-stats.com/collection/tigerbobnft-genesis",
+        "trades": "1,131",
+        "volume": "$4.39M",
+        "floor": "Ξ1.25"
+    },
+    {
+        "collection_name": "troll-town.wtf",
+        "collection_url": "https://www.nft-stats.com/collection/troll-townwtf",
+        "trades": "13,458",
+        "volume": "$4.18M",
+        "floor": "Ξ0.19"
+    },
+    {
+        "collection_name": "Town Star",
+        "collection_url": "https://www.nft-stats.com/collection/town-star",
+        "trades": "7,454",
+        "volume": "$4.04M",
+        "floor": "Ξ0.01"
+    },
+    {
+        "collection_name": "VeeFriends Series 2",
+        "collection_url": "https://www.nft-stats.com/collection/veefriends-series-2",
+        "trades": "2,871",
+        "volume": "$3.99M",
+        "floor": "Ξ0.46"
+    },
+    {
+        "collection_name": "BBRC - IVY BOYS",
+        "collection_url": "https://www.nft-stats.com/collection/bbrcofficial-ivyboys",
+        "trades": "6,568",
+        "volume": "$3.93M",
+        "floor": "Ξ0.17"
+    },
+    {
+        "collection_name": "Cool Cats NFT",
+        "collection_url": "https://www.nft-stats.com/collection/cool-cats-nft",
+        "trades": "542",
+        "volume": "$3.91M",
+        "floor": "Ξ3.09"
+    },
+    {
+        "collection_name": "FTC Official",
+        "collection_url": "https://www.nft-stats.com/collection/ftc-official",
+        "trades": "6,643",
+        "volume": "$3.9M",
+        "floor": "Ξ0.21"
+    },
+    {
+        "collection_name": "Begin as Nothing",
+        "collection_url": "https://www.nft-stats.com/collection/begin-as-nothing",
+        "trades": "2,582",
+        "volume": "$3.81M",
+        "floor": "Ξ0.79"
+    },
+    {
+        "collection_name": "pablos.lol",
+        "collection_url": "https://www.nft-stats.com/collection/pablos-lol",
+        "trades": "16,224",
+        "volume": "$3.71M",
+        "floor": "Ξ0.18"
+    },
+    {
+        "collection_name": "adidas Originals Into the Metaverse",
+        "collection_url": "https://www.nft-stats.com/collection/adidasoriginals",
+        "trades": "1,543",
+        "volume": "$3.68M",
+        "floor": "Ξ1"
+    },
+    {
+        "collection_name": "RTFKT - MNLTH",
+        "collection_url": "https://www.nft-stats.com/collection/rtfkt-mnlth",
+        "trades": "384",
+        "volume": "$3.66M",
+        "floor": "Ξ3.9"
+    },
+    {
+        "collection_name": "The Sandbox",
+        "collection_url": "https://www.nft-stats.com/collection/sandbox",
+        "trades": "1,125",
+        "volume": "$3.49M",
+        "floor": "Ξ1.57"
+    },
+    {
+        "collection_name": "RTFKT X NIKE MONOLITH",
+        "collection_url": "https://www.nft-stats.com/collection/rtfktmonolith",
+        "trades": "708",
+        "volume": "$3.44M",
+        "floor": "Ξ1.74"
+    },
+    {
+        "collection_name": "Dooplicator",
+        "collection_url": "https://www.nft-stats.com/collection/the-dooplicator",
+        "trades": "692",
+        "volume": "$3.43M",
+        "floor": "Ξ2.59"
+    },
+    {
+        "collection_name": "Meebits",
+        "collection_url": "https://www.nft-stats.com/collection/meebits",
+        "trades": "422",
+        "volume": "$3.41M",
+        "floor": "Ξ3.32"
+    },
+    {
+        "collection_name": "AIMoonbirds",
+        "collection_url": "https://www.nft-stats.com/collection/aimoonbirds",
+        "trades": "13,476",
+        "volume": "$3.34M",
+        "floor": "Ξ0.38"
+    },
+    {
+        "collection_name": "Quirklings",
+        "collection_url": "https://www.nft-stats.com/collection/quirklings",
+        "trades": "4,728",
+        "volume": "$3.34M",
+        "floor": "Ξ0.18"
+    },
+    {
+        "collection_name": "VividLimited",
+        "collection_url": "https://www.nft-stats.com/collection/vividlimited",
+        "trades": "6,962",
+        "volume": "$3.31M",
+        "floor": "Ξ0.05"
+    },
+    {
+        "collection_name": "Decentraland",
+        "collection_url": "https://www.nft-stats.com/collection/decentraland",
+        "trades": "513",
+        "volume": "$3.23M",
+        "floor": "Ξ2.8"
+    },
+    {
+        "collection_name": "Leave Me Alone NFT",
+        "collection_url": "https://www.nft-stats.com/collection/leave-me-alone-nft",
+        "trades": "10,795",
+        "volume": "$3.2M",
+        "floor": "Ξ0.02"
+    },
+    {
+        "collection_name": "TBAC",
+        "collection_url": "https://www.nft-stats.com/collection/tbac",
+        "trades": "1,319",
+        "volume": "$3.15M",
+        "floor": "Ξ0.23"
+    },
+    {
+        "collection_name": "The Art of Seasons",
+        "collection_url": "https://www.nft-stats.com/collection/the-art-of-seasons",
+        "trades": "1,161",
+        "volume": "$3.11M",
+        "floor": "Ξ0.98"
+    },
+    {
+        "collection_name": "Murakami.Flowers Seed",
+        "collection_url": "https://www.nft-stats.com/collection/murakami-flowers-seed",
+        "trades": "364",
+        "volume": "$2.9M",
+        "floor": "Ξ3.98"
+    },
+    {
+        "collection_name": "Invisible Friends",
+        "collection_url": "https://www.nft-stats.com/collection/invisiblefriends",
+        "trades": "399",
+        "volume": "$2.89M",
+        "floor": "Ξ2.9"
+    },
+    {
+        "collection_name": "VeeFriends",
+        "collection_url": "https://www.nft-stats.com/collection/veefriends",
+        "trades": "161",
+        "volume": "$2.82M",
+        "floor": "Ξ6.75"
+    },
+    {
+        "collection_name": "Cheers UP Period",
+        "collection_url": "https://www.nft-stats.com/collection/cheers-up-period",
+        "trades": "2,243",
+        "volume": "$2.77M",
+        "floor": "Ξ0.99"
+    },
+    {
+        "collection_name": "Rare Land NFT",
+        "collection_url": "https://www.nft-stats.com/collection/rarelandnft",
+        "trades": "21,882",
+        "volume": "$2.71M",
+        "floor": "Ξ0.02"
+    },
+    {
+        "collection_name": "10KTF Stockroom",
+        "collection_url": "https://www.nft-stats.com/collection/10ktf-stockroom",
+        "trades": "2,729",
+        "volume": "$2.68M",
+        "floor": "Ξ0.19"
+    },
+    {
+        "collection_name": "KILLABEARS",
+        "collection_url": "https://www.nft-stats.com/collection/killabears",
+        "trades": "2,083",
+        "volume": "$2.67M",
+        "floor": "Ξ0.55"
+    },
+    {
+        "collection_name": "World of Women",
+        "collection_url": "https://www.nft-stats.com/collection/world-of-women-nft",
+        "trades": "309",
+        "volume": "$2.61M",
+        "floor": "Ξ3.85"
+    },
+    {
+        "collection_name": "Yellowstone Firepit Crew",
+        "collection_url": "https://www.nft-stats.com/collection/yellowstonefirepitcrew",
+        "trades": "20",
+        "volume": "$2.58M",
+        "floor": "Ξ0.01"
+    },
+    {
+        "collection_name": "Karafuru",
+        "collection_url": "https://www.nft-stats.com/collection/karafuru",
+        "trades": "1,130",
+        "volume": "$2.56M",
+        "floor": "Ξ0.46"
+    },
+    {
+        "collection_name": "Okay Bears Yacht Club",
+        "collection_url": "https://www.nft-stats.com/collection/okaybearsyachtclub",
+        "trades": "16,089",
+        "volume": "$2.52M",
+        "floor": "Ξ0.04"
+    },
+    {
+        "collection_name": "Gents Croquet Club",
+        "collection_url": "https://www.nft-stats.com/collection/gents-croquet-club-official",
+        "trades": "216",
+        "volume": "$2.41M",
+        "floor": "Ξ8"
+    },
+    {
+        "collection_name": "hobotown.wtf",
+        "collection_url": "https://www.nft-stats.com/collection/hobotownwtf",
+        "trades": "11,985",
+        "volume": "$2.39M",
+        "floor": "Ξ0.09"
+    },
+    {
+        "collection_name": "PsychonautzNFT",
+        "collection_url": "https://www.nft-stats.com/collection/psychonautznft",
+        "trades": "13,541",
+        "volume": "$2.28M",
+        "floor": "Ξ0.03"
+    },
+    {
+        "collection_name": "PLUR Official",
+        "collection_url": "https://www.nft-stats.com/collection/plurofficial",
+        "trades": "6,827",
+        "volume": "$2.2M",
+        "floor": "Ξ0.14"
+    },
+    {
+        "collection_name": "NFT Worlds",
+        "collection_url": "https://www.nft-stats.com/collection/nft-worlds",
+        "trades": "310",
+        "volume": "$2.16M",
+        "floor": "Ξ3.1"
+    },
+    {
+        "collection_name": "PROOF Collective",
+        "collection_url": "https://www.nft-stats.com/collection/proof-collective",
+        "trades": "20",
+        "volume": "$2.12M",
+        "floor": "Ξ60.5"
+    },
+    {
+        "collection_name": "PREMINT Collector Pass - OFFICIAL",
+        "collection_url": "https://www.nft-stats.com/collection/premint-collector",
+        "trades": "1,114",
+        "volume": "$2.08M",
+        "floor": "Ξ0.69"
+    },
+    {
+        "collection_name": "oncyber labs",
+        "collection_url": "https://www.nft-stats.com/collection/oncyber",
+        "trades": "884",
+        "volume": "$2.06M",
+        "floor": "Ξ0.44"
+    },
+    {
+        "collection_name": "Flippr Access Pass",
+        "collection_url": "https://www.nft-stats.com/collection/officialflipprtool",
+        "trades": "5,880",
+        "volume": "$2.04M",
+        "floor": "Ξ0.06"
+    },
+    {
+        "collection_name": "UNSEEN UNIVERSE Official",
+        "collection_url": "https://www.nft-stats.com/collection/unseen-universe-official",
+        "trades": "7,294",
+        "volume": "$2.03M",
+        "floor": "Ξ0.08"
+    },
+    {
+        "collection_name": "Quirkies Originals",
+        "collection_url": "https://www.nft-stats.com/collection/quirkiesoriginals",
+        "trades": "526",
+        "volume": "$2.03M",
+        "floor": "Ξ0.89"
+    },
+    {
+        "collection_name": "Flower Fam - Official",
+        "collection_url": "https://www.nft-stats.com/collection/flowerfam-fam-official",
+        "trades": "7,797",
+        "volume": "$2.03M",
+        "floor": "Ξ0.29"
+    },
+    {
+        "collection_name": "Kith Friends",
+        "collection_url": "https://www.nft-stats.com/collection/kith-friends",
+        "trades": "1,236",
+        "volume": "$2.02M",
+        "floor": "Ξ0.54"
+    },
+    {
+        "collection_name": "Nouns",
+        "collection_url": "https://www.nft-stats.com/collection/nouns",
+        "trades": "12",
+        "volume": "$2.01M",
+        "floor": "Ξ95"
+    },
+    {
+        "collection_name": "Ragnarok Meta",
+        "collection_url": "https://www.nft-stats.com/collection/ragnarok-meta",
+        "trades": "1,043",
+        "volume": "$1.91M",
+        "floor": "Ξ0.55"
+    },
+    {
+        "collection_name": "IDZ",
+        "collection_url": "https://www.nft-stats.com/collection/idz",
+        "trades": "406",
+        "volume": "$1.89M",
+        "floor": "Ξ3.9"
+    },
+    {
+        "collection_name": "Damien Hirst - The Currency",
+        "collection_url": "https://www.nft-stats.com/collection/thecurrency",
+        "trades": "211",
+        "volume": "$1.87M",
+        "floor": "Ξ7.39"
+    },
+    {
+        "collection_name": "GotchiLending.com Access NFTs",
+        "collection_url": "https://www.nft-stats.com/collection/gotchilending",
+        "trades": "149",
+        "volume": "$1.87M",
+        "floor": "Ξ0.01"
+    },
+    {
+        "collection_name": "Verb: Chapter One",
+        "collection_url": "https://www.nft-stats.com/collection/verblabsofficial",
+        "trades": "8,464",
+        "volume": "$1.84M",
+        "floor": "Ξ0.03"
+    },
+    {
+        "collection_name": "Streetlab Genesis",
+        "collection_url": "https://www.nft-stats.com/collection/streetlab-genesis",
+        "trades": "4,476",
+        "volume": "$1.84M",
+        "floor": "Ξ0.08"
+    },
+    {
+        "collection_name": "ShitPlunger",
+        "collection_url": "https://www.nft-stats.com/collection/shitplunger",
+        "trades": "2,649",
+        "volume": "$1.78M",
+        "floor": "Ξ0.29"
+    },
+    {
+        "collection_name": "Fidenza by Tyler Hobbs",
+        "collection_url": "https://www.nft-stats.com/collection/fidenza-by-tyler-hobbs",
+        "trades": "12",
+        "volume": "$1.76M",
+        "floor": "Ξ75"
+    },
+    {
+        "collection_name": "Project NANOPASS",
+        "collection_url": "https://www.nft-stats.com/collection/projectnanopass",
+        "trades": "577",
+        "volume": "$1.71M",
+        "floor": "Ξ1.19"
+    },
+    {
+        "collection_name": "FLUF World",
+        "collection_url": "https://www.nft-stats.com/collection/fluf",
+        "trades": "306",
+        "volume": "$1.68M",
+        "floor": "Ξ2.6"
+    }
+  ]
