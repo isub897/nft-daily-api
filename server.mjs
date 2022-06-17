@@ -29,9 +29,10 @@ const options = {
 
 
 // respond with "hello world" when a GET request is made to the homepage
-app.get('/', (req, res) => {
 
-  fs.readFile('./response.json', (err, data) => {
+app.get('/24hr', (req, res) => {
+
+  fs.readFile('./response24hr.json', (err, data) => {
     if (err) {
       res.status(400).json('failure reading file', err);
       return;
@@ -41,5 +42,47 @@ app.get('/', (req, res) => {
 
   })
 })
+
+app.get('/7d', (req, res) => {
+
+  fs.readFile('./response7d.json', (err, data) => {
+    if (err) {
+      res.status(400).json('failure reading file', err);
+      return;
+    }
+
+    res.json(JSON.parse(data.toString()))
+
+  })
+})
+
+app.get('/30d', (req, res) => {
+
+  fs.readFile('./response30d.json', (err, data) => {
+    if (err) {
+      res.status(400).json('failure reading file', err);
+      return;
+    }
+
+    res.json(JSON.parse(data.toString()))
+
+  })
+})
+
+app.get('/AT', (req, res) => {
+
+  fs.readFile('./responseAT.json', (err, data) => {
+    if (err) {
+      res.status(400).json('failure reading file', err);
+      return;
+    }
+
+    res.json(JSON.parse(data.toString()))
+
+  })
+})
+
+
+
 
 app.listen(3000);
