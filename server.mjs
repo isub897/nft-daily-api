@@ -2,6 +2,7 @@ import express from 'express';
 import fetch from 'node-fetch';
 import cors from 'cors';
 import fs from 'fs';
+import timePeriods from './controllers/TNCAS/timePeriods.mjs'; 
 
 const app = express();
 app.use(express.json());
@@ -30,57 +31,10 @@ const options = {
 
 // respond with "hello world" when a GET request is made to the homepage
 
-app.get('/24hr', (req, res) => {
-
-  fs.readFile('./response24hr.json', (err, data) => {
-    if (err) {
-      res.status(400).json('failure reading file', err);
-      return;
-    }
-
-    res.json(JSON.parse(data.toString()))
-
-  })
-})
-
-app.get('/7d', (req, res) => {
-
-  fs.readFile('./response7d.json', (err, data) => {
-    if (err) {
-      res.status(400).json('failure reading file', err);
-      return;
-    }
-
-    res.json(JSON.parse(data.toString()))
-
-  })
-})
-
-app.get('/30d', (req, res) => {
-
-  fs.readFile('./response30d.json', (err, data) => {
-    if (err) {
-      res.status(400).json('failure reading file', err);
-      return;
-    }
-
-    res.json(JSON.parse(data.toString()))
-
-  })
-})
-
-app.get('/AT', (req, res) => {
-
-  fs.readFile('./responseAT.json', (err, data) => {
-    if (err) {
-      res.status(400).json('failure reading file', err);
-      return;
-    }
-
-    res.json(JSON.parse(data.toString()))
-
-  })
-})
+app.get('/24hr', (req, res) => {timePeriods.twentyFour(req, res, fs)});
+app.get('/7d', (req, res) => {timePeriods.sevenDay(req, res, fs)});
+app.get('/30d', (req, res) => {timePeriods.thirtyDay(req, res, fs)});
+app.get('/AT', (req, res) => {timePeriods.allTime(req, res, fs)});
 
 
 
