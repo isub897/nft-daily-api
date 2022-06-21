@@ -41,6 +41,8 @@ app.get('/30d', (req, res) => {timePeriods.thirtyDay(req, res, fs)});
 app.get('/AT', (req, res) => {timePeriods.allTime(req, res, fs)});
 
 
-
+app.get('/', (req, res) => {
+  res.json("you made it it");
+})
 
 app.listen(3000);
