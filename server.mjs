@@ -3,6 +3,7 @@ import fetch from 'node-fetch';
 import cors from 'cors';
 import fs from 'fs';
 import timePeriods from './controllers/TNCAS/timePeriods.mjs'; 
+import handleTimePeriod from './controllers/TNCAS/timePeriods.mjs';
 import news from './controllers/BCN/news.mjs'
 
 const app = express();
@@ -34,11 +35,8 @@ const optionsBCN = {
 app.get('/NDTV', (req, res) => {news.specificNews(req, res, fs)})
 app.get('/news', (req, res) => {news.allNews(req, res, fs)})
 
-// CHARTS end-poins
-app.get('/24hr', (req, res) => {timePeriods.twentyFour(req, res, fs)});
-app.get('/7d', (req, res) => {timePeriods.sevenDay(req, res, fs)});
-app.get('/30d', (req, res) => {timePeriods.thirtyDay(req, res, fs)});
-app.get('/AT', (req, res) => {timePeriods.allTime(req, res, fs)});
+// CHARTS end-point
+app.get('/:time', (req, res) => handleTimePeriod(req, res, fs));
 
 
 
