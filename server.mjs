@@ -8,6 +8,7 @@ import news from './controllers/BCN/news.mjs'
 import knex from 'knex';
 import session from 'express-session';
 import knexSessionStore from 'connect-session-knex';
+import bcrypt from 'bcryptjs';
 
 
 
@@ -39,10 +40,18 @@ app.use(session({
   secret: 'some secret',
   resave: false,
   cookie: { secure: true,
-            maxAge: 30000},
+            maxAge: 10000},
   saveUninitialized: false,
 }))
 // app.use(cookieParser());
+
+// const isAuth = () => {
+//   if (req.session.authenticated) {
+//     next();
+//   } else {
+//     res.redirect('/login');
+//   }
+// }
 
 
 const urlTNCAS = 'https://top-nft-collections-and-sales.p.rapidapi.com/collections/30d';
@@ -67,40 +76,84 @@ const optionsBCN = {
 app.post('/register', (req, res) => {
   const {username, email, password} = req.body;
   if (!(username && email && password)) {return res.status(400).json('fill')}
-  postgres('users').where('email', email)
+  return postgres('users').where('email', email)
   .then(response => {
-    if (response[0]) {
-      return res.status(400).json('duplicate')
-    } else {
-      return res.status(200).json('excellent')
+    if (response[0]) return res.status(400).json('duplicate') 
+    else {
+      const hash = bcrypt.hashSync(password, bcrypt.genSaltSync(10))  
+      return postgres.transaction(function(trx) {
+        return postgres('login').transacting(trx).insert({
+          email: email,
+          hash: hash
+        })
+          .then(function(resp) {
+            return postgres('users').transacting(trx).insert({
+              username: username,
+              email: email,
+              joined: new Date()
+            })
+            .then(dbresponse => dbresponse)
+          })
+          .then(trx.commit)
+          .catch(trx.rollback);
+      })
+      .then(function(resp) {
+        return postgres('users').where('email', email)
+        .then(user => res.status(200).json(user[0]))
+        .catch(err => res.status(400).json('error finding'))
+      })
+      .catch(function(err) {
+        return res.status(400).json('failure')
+      });
     }
-  })
-})
-
-
+  }) 
+});  
+  
 
 app.post('/login', (req, res) => {
-  console.log("auth: ", req.session.authenticated)
-  console.log(req.sessionID);
-  const { username, password } = req.body;
-  if (username && password) {
-    if (req.session.authenticated) {
-      res.json(req.session);
+  // req.session.authenticated = true;
+  const { email, password } = req.body;
+  if (!(email && password)) return res.status(400).json('fill');
+  postgres('login').where('email', email)
+  .then(response => {
+    if(bcrypt.compareSync(password, response[0].hash)) {
+      postgres('users').where('email', email)
+      .then(user => {
+        return res.status(200).json(user[0]);
+      })
+      .catch(err => res.status(400).json('failure'));      
     } else {
-      if (password === '123') {
-        req.session.authenticated = true;
-        req.session.user = {
-          username, password
-        };
-        res.json(req.session);
-      } else {
-        res.status(403).json({msg: 'bad credentials'})
-      }
+      return res.status(400).json('failure');
     }
-  } else {
-    res.status(403).json({msg: 'bad credentials'})
-  }
+  })
+  .catch(err => res.status(400).json('failure'))
 })
+
+
+
+
+// app.post('/login', (req, res) => {
+//   console.log("auth: ", req.session.authenticated)
+//   console.log(req.sessionID);
+//   const { username, password } = req.body;
+//   if (username && password) {
+//     if (req.session.authenticated) {
+//       res.json(req.session);
+//     } else {
+//       if (password === '123') {
+//         req.session.authenticated = true;
+//         req.session.user = {
+//           username, password
+//         };
+//         res.json(req.session);
+//       } else {
+//         res.status(403).json({msg: 'bad credentials'})
+//       }
+//     }
+//   } else {
+//     res.status(403).json({msg: 'bad credentials'})
+//   }
+// })
   
 // NEWS end-points
 app.get('/NDTV', (req, res) => {news.specificNews(req, res, fs)})
