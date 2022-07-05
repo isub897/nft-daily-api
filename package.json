@@ -2,7 +2,7 @@
   "name": "nft-daily-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.mjs",
   "scripts": {
     "start": "nodemon server.mjs"
   },
@@ -18,9 +18,14 @@
   },
   "homepage": "https://github.com/isub897/nft-daily-api#readme",
   "dependencies": {
+    "connect-session-knex": "^3.0.0",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "express": "^4.18.1",
-    "node-fetch": "^3.2.6"
+    "express-session": "^1.17.3",
+    "knex": "^2.1.0",
+    "node-fetch": "^3.2.6",
+    "pg": "^8.7.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
