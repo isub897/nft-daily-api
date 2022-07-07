@@ -164,7 +164,7 @@ app.get('/:time', (req, res) => handleTimePeriod(req, res, fs));
 
 
 app.get('/', (req, res) => {
-  req.session.authenticated = true;
+  // req.session.authenticated = true;
   res.json("you made it it");
 })
 
