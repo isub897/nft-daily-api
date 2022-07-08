@@ -15,7 +15,12 @@ import bcrypt from 'bcryptjs';
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
-app.use(cors());
+app.use(cors({
+  credentials: true,
+   origin: 'http://localhost:3001'
+}));
+
+
 
 const knexSession = knexSessionStore(session);
 
@@ -39,19 +44,10 @@ app.use(session({
   store: store,
   secret: 'some secret',
   resave: false,
-  cookie: { secure: true,
-            maxAge: 10000},
+  cookie: { secure: false,
+            maxAge: 30 * 60 * 1000},
   saveUninitialized: false,
 }))
-// app.use(cookieParser());
-
-// const isAuth = () => {
-//   if (req.session.authenticated) {
-//     next();
-//   } else {
-//     res.redirect('/login');
-//   }
-// }
 
 
 const urlTNCAS = 'https://top-nft-collections-and-sales.p.rapidapi.com/collections/30d';
@@ -72,6 +68,16 @@ const optionsBCN = {
     'X-RapidAPI-Host': 'blockchain-news1.p.rapidapi.com'
   }
 };
+
+app.get('/dashboard', (req, res) => {
+  if(req.session.authenticated) {
+    postgres('users').where('email', req.session.user)
+    .then(user => res.json(user))
+    .catch(err => res.status(400).json("failure"))
+  } else {
+    res.json({msg: false})
+  }
+})
 
 app.post('/register', (req, res) => {
   const {username, email, password} = req.body;
@@ -111,7 +117,6 @@ app.post('/register', (req, res) => {
   
 
 app.post('/login', (req, res) => {
-  // req.session.authenticated = true;
   const { email, password } = req.body;
   if (!(email && password)) return res.status(400).json('fill');
   postgres('login').where('email', email)
@@ -119,6 +124,8 @@ app.post('/login', (req, res) => {
     if(bcrypt.compareSync(password, response[0].hash)) {
       postgres('users').where('email', email)
       .then(user => {
+        req.session.authenticated = true;
+        req.session.user = email;
         return res.status(200).json(user[0]);
       })
       .catch(err => res.status(400).json('failure'));      
@@ -129,31 +136,13 @@ app.post('/login', (req, res) => {
   .catch(err => res.status(400).json('failure'))
 })
 
+app.get('/logout', (req, res) => {
+  req.session.destroy(err => {
+    if(err) {res.status(400).json("failure")}
+  })
+  res.redirect('/');
+})
 
-
-
-// app.post('/login', (req, res) => {
-//   console.log("auth: ", req.session.authenticated)
-//   console.log(req.sessionID);
-//   const { username, password } = req.body;
-//   if (username && password) {
-//     if (req.session.authenticated) {
-//       res.json(req.session);
-//     } else {
-//       if (password === '123') {
-//         req.session.authenticated = true;
-//         req.session.user = {
-//           username, password
-//         };
-//         res.json(req.session);
-//       } else {
-//         res.status(403).json({msg: 'bad credentials'})
-//       }
-//     }
-//   } else {
-//     res.status(403).json({msg: 'bad credentials'})
-//   }
-// })
   
 // NEWS end-points
 app.get('/NDTV', (req, res) => {news.specificNews(req, res, fs)})
@@ -164,47 +153,8 @@ app.get('/:time', (req, res) => handleTimePeriod(req, res, fs));
 
 
 app.get('/', (req, res) => {
-  // req.session.authenticated = true;
   res.json("you made it it");
 })
 
 
 app.listen(3000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const validateCookie = (req, res, next) => {
-//   const { cookies } = req;
-//   if ('session_id' in cookies) {
-//     console.log('session id exists.');
-//     if (cookies.session_id === '123456') {
-//       next();
-//     } else {
-//       res.status(403).send({msg: 'not authenticated'});
-//     }
-//   } else {
-//     res.status(403).send({msg: 'not authenticated'});
-//   }
-// } 
-
-// app.get('/signin', (req, res) => {
-//   res.cookie('session_id', '123456');
-//   res.status(200).json({msg: 'Loggin In.'});
-// })
-
-// app.get('/protected', validateCookie, (req, res) => {
-//   res.status(200).json({msg: 'you are authorized'});
-// });
