@@ -106,7 +106,7 @@ app.post('/register', (req, res) => {
       .then(function(resp) {
         return postgres('users').where('email', email)
         .then(user => res.status(200).json(user[0]))
-        .catch(err => res.status(400).json('error finding'))
+        .catch(err => res.status(400).json('failure'))
       })
       .catch(function(err) {
         return res.status(400).json('failure')
