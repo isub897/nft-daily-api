@@ -80,8 +80,9 @@ app.get('/dashboard', (req, res) => {
 })
 
 app.post('/register', (req, res) => {
-  const {username, email, password} = req.body;
-  if (!(username && email && password)) {return res.status(400).json('fill')}
+  const {username, email, password, confirm} = req.body;
+  if (!(username && email && password && confirm)) {return res.status(400).json('fill')}
+  if(password !== confirm) {return res.status(400).json('matching')}
   return postgres('users').where('email', email)
   .then(response => {
     if (response[0]) return res.status(400).json('duplicate') 
@@ -104,6 +105,8 @@ app.post('/register', (req, res) => {
           .catch(trx.rollback);
       })
       .then(function(resp) {
+        req.session.authenticated = true;
+        req.session.user = email;
         return postgres('users').where('email', email)
         .then(user => res.status(200).json(user[0]))
         .catch(err => res.status(400).json('failure'))
