@@ -9,8 +9,20 @@ import knex from 'knex';
 import session from 'express-session';
 import knexSessionStore from 'connect-session-knex';
 import bcrypt from 'bcryptjs';
+import multer from 'multer';
+import { v4 as uuidv4 } from 'uuid';
 
-
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, 'uploads');
+  },
+  filename: (req, file, cb) => {
+    const { originalname } = file;
+    cb(null, `${uuidv4()}-${originalname}`);
+  }
+});
+const upload = multer({ storage })
+// `${originalname}-${uuidv4()}`
 
 const app = express();
 app.use(express.json());
@@ -19,6 +31,7 @@ app.use(cors({
   credentials: true,
    origin: 'http://localhost:3001'
 }));
+app.use(express.static('public'));
 
 
 
@@ -146,13 +159,17 @@ app.get('/logout', (req, res) => {
   res.redirect('/');
 })
 
+app.post('/upload', upload.single('avatar'), (req, res) => {
+  return res.json({ status: "OK" });
+})
+
   
 // NEWS end-points
 app.get('/NDTV', (req, res) => {news.specificNews(req, res, fs)})
 app.get('/news', (req, res) => {news.allNews(req, res, fs)})
 
-// CHARTS end-point
-app.get('/:time', (req, res) => handleTimePeriod(req, res, fs));
+// CHARTS end-point (there is a problem with this route most likely linked to the way i reference the /:time route)
+// app.get('/:time', (req, res) => handleTimePeriod(req, res, fs));
 
 
 app.get('/', (req, res) => {
